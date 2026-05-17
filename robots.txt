@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mirette-amir.github.io/mirette.github.io/sitemap.xml
