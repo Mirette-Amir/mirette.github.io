@@ -1,30 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-ELKEB36CLK"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ELKEB36CLK"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-ELKEB36CLK');
+  </script>
 
-  gtag('config', 'G-ELKEB36CLK');
-</script>
   <meta charset="UTF-8" />
-  
- <!-- Google verification -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <!-- Google Verification -->
   <meta name="google-site-verification" content="MpKvP49Wb62a3ufzny_8MsJK5Twyq4Cy5TamCxlmXfs" />
 
   <!-- SEO Title -->
-  <title>Grow your Buisness with Proven SEO Strategies</title>
+  <title>Best Skin Care Products & Beauty Tips | Glow Skin Guide</title>
 
   <!-- SEO Description -->
   <meta name="description"
-    content="Want to grow your Business online? "/>
+    content="Discover the best skin care products, beauty tips, acne solutions, moisturizers, sunscreens, and skin care routines for glowing skin."/>
 
-  <!-- Keywords -->
+  <!-- SEO Keywords -->
   <meta name="keywords"
-    content="SEO Specialist, WordPress SEO, AI SEO tools, keyword research, Google ranking"/>
+    content="skin care products, best sunscreen, moisturizers, acne treatment, glowing skin, korean skincare, beauty tips"/>
 
   <style>
     *{
@@ -35,8 +36,8 @@
     }
 
     body{
-      background:#0f172a;
-      color:white;
+      background:#fff7fb;
+      color:#333;
       line-height:1.7;
     }
 
@@ -47,7 +48,7 @@
       align-items:center;
       text-align:center;
       padding:40px;
-      background:linear-gradient(135deg,#0f172a,#1e293b);
+      background:linear-gradient(135deg,#ffe4ec,#ffd6f5);
     }
 
     .hero{
@@ -56,26 +57,26 @@
 
     h1{
       font-size:4rem;
-      color:#38bdf8;
+      color:#d63384;
       margin-bottom:20px;
     }
 
     .subtitle{
       font-size:1.5rem;
-      color:#cbd5e1;
+      color:#6c757d;
       margin-bottom:20px;
     }
 
     .description{
-      color:#94a3b8;
+      color:#555;
       margin-bottom:30px;
       font-size:1.1rem;
     }
 
     .btn{
       display:inline-block;
-      background:#38bdf8;
-      color:#0f172a;
+      background:#d63384;
+      color:white;
       padding:14px 28px;
       border-radius:10px;
       text-decoration:none;
@@ -84,7 +85,7 @@
     }
 
     .btn:hover{
-      background:#0ea5e9;
+      background:#b0256d;
       transform:translateY(-3px);
     }
 
@@ -98,54 +99,42 @@
       text-align:center;
       font-size:2.5rem;
       margin-bottom:50px;
-      color:#38bdf8;
+      color:#d63384;
     }
 
-    .services{
+    .products,
+    .articles{
       display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
       gap:20px;
     }
 
-    .card{
-      background:#1e293b;
+    .card,
+    .article{
+      background:white;
       padding:30px;
-      border-radius:15px;
+      border-radius:18px;
+      box-shadow:0 4px 15px rgba(0,0,0,0.08);
       transition:0.3s;
     }
 
-    .card:hover{
+    .card:hover,
+    .article:hover{
       transform:translateY(-5px);
-      background:#334155;
     }
 
-    .card h3{
+    .card h3,
+    .article h3{
+      color:#d63384;
       margin-bottom:15px;
-      color:#38bdf8;
     }
 
     .about{
       text-align:center;
       max-width:800px;
       margin:auto;
-      color:#cbd5e1;
-    }
-
-    .articles{
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-      gap:20px;
-    }
-
-    .article{
-      background:#1e293b;
-      padding:25px;
-      border-radius:15px;
-    }
-
-    .article h3{
-      color:#38bdf8;
-      margin-bottom:15px;
+      color:#555;
+      font-size:1.1rem;
     }
 
     .contact{
@@ -155,12 +144,11 @@
     footer{
       text-align:center;
       padding:20px;
-      background:#020617;
-      color:#64748b;
+      background:#fff0f6;
+      color:#777;
     }
 
     @media(max-width:768px){
-
       h1{
         font-size:2.5rem;
       }
@@ -168,7 +156,6 @@
       .subtitle{
         font-size:1.1rem;
       }
-
     }
   </style>
 </head>
@@ -179,59 +166,61 @@
   <header>
     <div class="hero">
 
-      <h1>Grow your Buisness with Proven SEO Strategies</h1>
-
-      <h2>By Mirette Morgan</h2>
+      <h1>Glow Skin Guide</h1>
 
       <p class="subtitle">
-        Want to grow your Buisness online?
+        Discover the Best Skin Care Products for Healthy Glowing Skin
       </p>
 
       <p class="description">
-        I provide Strategic, data driven, SEO services to boost rankings, increase traffic and Drive Real Results
+        Explore expert beauty tips, product reviews, acne solutions,
+        moisturizers, sunscreens, and beginner skin care routines.
       </p>
 
-      <a href="#contact" class="btn">Ready?</a>
+      <a href="#articles" class="btn">Explore Articles</a>
 
     </div>
   </header>
 
-  <!-- SERVICES -->
+  <!-- PRODUCTS SECTION -->
   <section>
 
-    <h2 class="section-title">My SEO Services</h2>
+    <h2 class="section-title">Popular Skin Care Topics</h2>
 
-    <div class="services">
+    <div class="products">
 
       <div class="card">
-        <h3>Keyword Research</h3>
+        <h3>Best Sunscreens</h3>
 
         <p>
-          Finding low competition keywords that help websites get targeted traffic.
+          Discover the best sunscreens for oily skin, acne-prone skin,
+          and sensitive skin.
         </p>
       </div>
 
       <div class="card">
-        <h3>WordPress SEO</h3>
+        <h3>Korean Skin Care</h3>
 
         <p>
-          Optimizing WordPress websites for better Google rankings and speed.
+          Explore trending Korean beauty products and routines for glowing skin.
         </p>
       </div>
 
       <div class="card">
-        <h3>AI SEO Tools</h3>
+        <h3>Acne Treatment</h3>
 
         <p>
-          Using AI tools to create optimized SEO content and improve visibility.
+          Learn about acne solutions, cleansers, serums,
+          and products that help reduce breakouts.
         </p>
       </div>
 
       <div class="card">
-        <h3>On-Page SEO</h3>
+        <h3>Moisturizers</h3>
 
         <p>
-          Optimizing titles, headings, content structure, and internal links.
+          Find the best moisturizers for dry skin, oily skin,
+          and combination skin.
         </p>
       </div>
 
@@ -239,64 +228,74 @@
 
   </section>
 
-  <!-- ABOUT -->
+  <!-- ABOUT SECTION -->
   <section>
 
-    <h2 class="section-title">Who I AM?</h2>
+    <h2 class="section-title">About Glow Skin Guide</h2>
 
     <div class="about">
 
       <p>
-        I am building my career in SEO and digital marketing by learning modern
-        SEO strategies, WordPress optimization, and AI-powered workflows.
+        Glow Skin Guide helps beauty lovers discover the best skin care products,
+        routines, and beauty tips for healthier skin.
       </p>
 
       <br>
 
       <p>
-        My goal is to help businesses grow online and rank higher on Google.
+        We share honest reviews, beginner-friendly skin care advice,
+        and trending beauty recommendations.
       </p>
 
     </div>
 
   </section>
 
-  <!-- ARTICLES -->
-  <section>
+  <!-- ARTICLES SECTION -->
+  <section id="articles">
 
-    <h2 class="section-title">Latest SEO Articles</h2>
+    <h2 class="section-title">Latest Articles</h2>
 
     <div class="articles">
 
       <div class="article">
 
-        <h3>Best Free AI SEO Tools</h3>
+        <h3>Best Sunscreen for Oily Skin</h3>
 
         <p>
-          Discover the best AI SEO tools for keyword research,
-          content optimization, and improving website rankings.
+          Discover lightweight sunscreens that protect your skin
+          without making it greasy.
         </p>
 
       </div>
 
       <div class="article">
 
-        <h3>Beginner Guide to WordPress SEO</h3>
+        <h3>Beginner Skin Care Routine</h3>
 
         <p>
-          Learn how to optimize WordPress websites for search engines
-          and improve visibility on Google.
+          Learn the essential steps for building a simple and effective
+          skin care routine.
         </p>
 
       </div>
 
       <div class="article">
 
-        <h3>How to Rank a Website on Google</h3>
+        <h3>Top Korean Moisturizers in 2026</h3>
 
         <p>
-          Learn the basics of keyword research, content optimization,
-          and technical SEO for better rankings.
+          Explore the most popular Korean moisturizers for glowing healthy skin.
+        </p>
+
+      </div>
+
+      <div class="article">
+
+        <h3>How to Remove Acne Marks Naturally</h3>
+
+        <p>
+          Learn skin care tips and ingredients that help reduce acne scars.
         </p>
 
       </div>
@@ -308,17 +307,11 @@
   <!-- CONTACT -->
   <section id="contact">
 
-    <h2 class="section-title">Contact Me</h2>
+    <h2 class="section-title">Contact</h2>
 
     <div class="contact">
 
       <p>Email: mirettemorgan91@gmail.com</p>
-
-      <br>
-
-      <p>
-        
-      </p>
 
       <br><br>
 
@@ -331,7 +324,7 @@
   </section>
 
   <footer>
-    <p>© 2026 Mirette SEO Specialist</p>
+    <p>© 2026 Glow Skin Guide</p>
   </footer>
 
 </body>
