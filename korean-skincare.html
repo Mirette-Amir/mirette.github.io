@@ -1,77 +1,304 @@
-<div class="card">
+<!DOCTYPE html>
+<html lang="en">
+<head>
 
-  <h3>
-    <a href="korean-skincare.html"
-       style="text-decoration:none; color:#d63384;">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <title>
+    Korean Skin Care | Glow Skin Guide
+  </title>
+
+  <meta name="description"
+        content="Discover Korean skin care routines, popular ingredients, beauty products, and glowing skin tips."/>
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial,sans-serif;
+    }
+
+    body{
+      background:linear-gradient(to bottom,#fff7fb,#ffffff);
+      color:#333;
+      line-height:1.8;
+    }
+
+    /* NAVBAR */
+
+    nav{
+      width:100%;
+      position:fixed;
+      top:0;
+      left:0;
+      z-index:999;
+      background:rgba(255,255,255,0.95);
+      backdrop-filter:blur(10px);
+      box-shadow:0 2px 10px rgba(0,0,0,0.05);
+    }
+
+    .nav-container{
+      max-width:1200px;
+      margin:auto;
+      padding:18px 20px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+    }
+
+    .logo{
+      font-size:1.5rem;
+      font-weight:bold;
+      color:#d63384;
+    }
+
+    .logo a{
+      text-decoration:none;
+      color:#d63384;
+    }
+
+    /* HERO */
+
+    .hero{
+      padding-top:140px;
+      padding-bottom:80px;
+      text-align:center;
+
+      background:
+      linear-gradient(
+        rgba(0,0,0,0.45),
+        rgba(0,0,0,0.45)
+      ),
+      url('korean-skincare.jpg');
+
+      background-size:cover;
+      background-position:center;
+
+      color:white;
+    }
+
+    .hero h1{
+      font-size:4rem;
+      margin-bottom:20px;
+    }
+
+    .hero p{
+      max-width:700px;
+      margin:auto;
+      font-size:1.2rem;
+      color:#f3f3f3;
+    }
+
+    /* CONTENT */
+
+    section{
+      max-width:1000px;
+      margin:auto;
+      padding:80px 20px;
+    }
+
+    .content-box{
+      background:white;
+      padding:40px;
+      border-radius:25px;
+      border:1px solid #f3d6e4;
+      box-shadow:0 6px 20px rgba(0,0,0,0.07);
+    }
+
+    h2{
+      color:#d63384;
+      margin-bottom:20px;
+      margin-top:35px;
+    }
+
+    p{
+      color:#555;
+      margin-bottom:20px;
+      line-height:1.9;
+    }
+
+    ul{
+      padding-left:20px;
+      color:#555;
+      margin-bottom:25px;
+    }
+
+    ul li{
+      margin-bottom:14px;
+      line-height:1.8;
+    }
+
+    footer{
+      background:#fff0f6;
+      text-align:center;
+      padding:25px;
+      color:#777;
+      margin-top:60px;
+    }
+
+    @media(max-width:768px){
+
+      .hero h1{
+        font-size:2.6rem;
+      }
+
+      .hero p{
+        font-size:1rem;
+      }
+
+      .content-box{
+        padding:25px;
+      }
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+
+  <nav>
+
+    <div class="nav-container">
+
+      <div class="logo">
+
+        <a href="index.html">
+          Glow Skin Guide
+        </a>
+
+      </div>
+
+    </div>
+
+  </nav>
+
+  <!-- HERO -->
+
+  <div class="hero">
+
+    <h1>
       Korean Skin Care
+    </h1>
 
-    </a>
-  </h3>
+    <p>
+      Discover trending Korean beauty products,
+      glowing skin routines,
+      and gentle ingredients loved worldwide.
+    </p>
 
-  <p>
-    Korean skin care focuses on hydration,
-    healthy glowing skin, gentle ingredients,
-    and consistent daily routines.
-  </p>
+  </div>
 
-  <p>
-    Popular Korean beauty products include
-    cleansing oils, hydrating toners,
-    essence serums, sheet masks,
-    and lightweight sunscreens.
-  </p>
+  <!-- CONTENT -->
 
-  <h4 class="small-title">
-    Popular Korean Skin Care Ingredients
-  </h4>
+  <section>
 
-  <ul class="skin-list">
+    <div class="content-box">
 
-    <li>
-      <strong>Snail Mucin</strong> –
-      Helps hydrate and repair the skin barrier.
-    </li>
+      <p>
 
-    <li>
-      <strong>Centella Asiatica</strong> –
-      Calms redness and sensitive skin.
-    </li>
+        Korean skin care focuses on hydration,
+        healthy glowing skin,
+        and protecting the skin barrier
+        using gentle lightweight products.
 
-    <li>
-      <strong>Rice Extract</strong> –
-      Brightens dull skin and improves glow.
-    </li>
+      </p>
 
-    <li>
-      <strong>Hyaluronic Acid</strong> –
-      Deeply hydrates and plumps the skin.
-    </li>
+      <p>
 
-  </ul>
+        Korean beauty routines often include
+        cleansing oils, water-based cleansers,
+        toners, essence serums,
+        moisturizers, and sunscreen.
 
-  <h4 class="small-title">
-    Why Korean Skin Care Is Popular
-  </h4>
+      </p>
 
-  <ul class="skin-list">
+      <h2>
+        Popular Korean Skin Care Ingredients
+      </h2>
 
-    <li>
-      Lightweight formulas that feel comfortable on the skin.
-    </li>
+      <ul>
 
-    <li>
-      Focus on hydration and long-term skin health.
-    </li>
+        <li>
+          <strong>Snail Mucin</strong> –
+          Helps repair and deeply hydrate the skin.
+        </li>
 
-    <li>
-      Gentle products suitable for many skin types.
-    </li>
+        <li>
+          <strong>Centella Asiatica</strong> –
+          Calms redness and irritation.
+        </li>
 
-    <li>
-      Innovative ingredients and glowing skin routines.
-    </li>
+        <li>
+          <strong>Rice Extract</strong> –
+          Brightens dull skin naturally.
+        </li>
 
-  </ul>
+        <li>
+          <strong>Hyaluronic Acid</strong> –
+          Keeps skin hydrated and plump.
+        </li>
 
+        <li>
+          <strong>Green Tea</strong> –
+          Provides antioxidant protection.
+        </li>
+
+      </ul>
+
+      <h2>
+        Why Korean Skin Care Is Popular
+      </h2>
+
+      <ul>
+
+        <li>
+          Lightweight products suitable for daily use.
+        </li>
+
+        <li>
+          Focus on hydration and long-term skin health.
+        </li>
+
+        <li>
+          Gentle ingredients for sensitive skin.
+        </li>
+
+        <li>
+          Glowing glass-skin beauty trends.
+        </li>
+
+      </ul>
+
+      <h2>
+        Korean Skin Care Routine
+      </h2>
+
+      <p>
+
+        A basic Korean skin care routine may include:
+        cleanser, toner, serum,
+        moisturizer, and sunscreen.
+
+      </p>
+
+    </div>
+
+  </section>
+
+  <footer>
+
+    <p>
+      © 2026 Glow Skin Guide
+    </p>
+
+  </footer>
+
+</body>
+</html>
 </div>
