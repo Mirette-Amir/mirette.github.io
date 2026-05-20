@@ -1,33 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
   <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-ELKEB36CLK"></script>
+
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+
+    function gtag(){
+      dataLayer.push(arguments);
+    }
+
     gtag('js', new Date());
     gtag('config', 'G-ELKEB36CLK');
   </script>
 
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8"/>
+
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0"/>
+
+  <!-- SEO -->
+  <title>
+    Best Skin Care Products & Beauty Tips | Glow Skin Guide
+  </title>
+
+  <meta name="description"
+        content="Discover the best skin care products, beauty tips, acne solutions, moisturizers, sunscreens, and skin care routines for glowing skin."/>
+
+  <meta name="keywords"
+        content="skin care products, sunscreen, moisturizers, acne treatment, glowing skin, korean skincare, beauty tips"/>
+
+  <meta name="robots"
+        content="index, follow"/>
+
+  <meta name="theme-color"
+        content="#d63384"/>
 
   <!-- Google Verification -->
-  <meta name="google-site-verification" content="MpKvP49Wb62a3ufzny_8MsJK5Twyq4Cy5TamCxlmXfs" />
+  <meta name="google-site-verification"
+        content="MpKvP49Wb62a3ufzny_8MsJK5Twyq4Cy5TamCxlmXfs"/>
 
-  <!-- SEO Title -->
-  <title>Best Skin Care Products & Beauty Tips | Glow Skin Guide</title>
-
-  <!-- SEO Description -->
-  <meta name="description"
-    content="Discover the best skin care products, beauty tips, acne solutions, moisturizers, sunscreens, and skin care routines for glowing skin."/>
-
-  <!-- SEO Keywords -->
-  <meta name="keywords"
-    content="skin care products, best sunscreen, moisturizers, acne treatment, glowing skin, korean skincare, beauty tips"/>
+  <!-- Canonical -->
+  <link rel="canonical"
+        href="https://yourdomain.com/"/>
 
   <style>
+
     *{
       margin:0;
       padding:0;
@@ -35,245 +55,441 @@
       font-family:Arial,sans-serif;
     }
 
+    html{
+      scroll-behavior:smooth;
+    }
+
     body{
-      background:#fff7fb;
+      background:linear-gradient(to bottom,#fff7fb,#ffffff);
       color:#333;
       line-height:1.7;
     }
 
-    header{
-      header{
-  min-height:100vh;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  text-align:center;
-  padding:40px;
+    /* NAVBAR */
 
-  background:
-    linear-gradient(
-      rgba(0,0,0,0.45),
-      rgba(0,0,0,0.45)
-    ),
-    url('Best-sunscrees-products.jpg');
-
-  background-size:cover;
-  background-position:center;
-  background-repeat:no-repeat;
+    nav{
+      width:100%;
+      position:fixed;
+      top:0;
+      left:0;
+      z-index:999;
+      background:rgba(255,255,255,0.95);
+      backdrop-filter:blur(10px);
+      box-shadow:0 2px 10px rgba(0,0,0,0.05);
     }
+
+    .nav-container{
+      max-width:1200px;
+      margin:auto;
+      padding:18px 20px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+    }
+
+    .logo{
+      font-size:1.5rem;
+      font-weight:bold;
+      color:#d63384;
+    }
+
+    .nav-links{
+      display:flex;
+      gap:20px;
+    }
+
+    .nav-links a{
+      text-decoration:none;
+      color:#444;
+      font-weight:bold;
+      transition:0.3s;
+    }
+
+    .nav-links a:hover{
+      color:#d63384;
+    }
+
+    /* HERO */
+
+    header{
+      min-height:100vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+      padding:40px;
+
+      background:
+      linear-gradient(
+        rgba(0,0,0,0.50),
+        rgba(0,0,0,0.50)
+      ),
+      url('Best-sunscreens-products.jpg');
+
+      background-size:cover;
+      background-position:center;
+      background-repeat:no-repeat;
+    }
+
     .hero{
-      max-width:800px;
+      max-width:850px;
+      color:white;
+      animation:fadeIn 1.5s ease;
     }
 
     h1{
-      font-size:4rem;
-      color:#d63384;
+      font-size:4.5rem;
       margin-bottom:20px;
+      color:white;
     }
 
     .subtitle{
-  color:white;
+      font-size:1.4rem;
+      margin-bottom:20px;
+      color:#f3f3f3;
     }
 
     .description{
-  color:#f1f1f1;
-     }
+      font-size:1.1rem;
+      color:#ededed;
+      margin-bottom:35px;
+    }
 
     .btn{
       display:inline-block;
       background:#d63384;
       color:white;
-      padding:14px 28px;
-      border-radius:10px;
+      padding:15px 32px;
+      border-radius:12px;
       text-decoration:none;
       font-weight:bold;
       transition:0.3s;
+      margin-top:10px;
+      box-shadow:0 6px 20px rgba(214,51,132,0.3);
     }
 
     .btn:hover{
       background:#b0256d;
-      transform:translateY(-3px);
+      transform:translateY(-4px);
     }
 
+    /* GENERAL SECTION */
+
     section{
-      max-width:1100px;
+      max-width:1150px;
       margin:auto;
-      padding:80px 20px;
+      padding:90px 20px;
     }
 
     .section-title{
       text-align:center;
-      font-size:2.5rem;
-      margin-bottom:50px;
+      font-size:2.7rem;
+      margin-bottom:60px;
       color:#d63384;
     }
+
+    /* CARDS */
 
     .products,
     .articles{
       display:grid;
       grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-      gap:20px;
+      gap:25px;
     }
 
     .card,
     .article{
       background:white;
       padding:30px;
-      border-radius:18px;
-      box-shadow:0 4px 15px rgba(0,0,0,0.08);
+      border-radius:22px;
+      border:1px solid #f3d6e4;
+      box-shadow:0 6px 20px rgba(0,0,0,0.07);
       transition:0.3s;
     }
 
     .card:hover,
     .article:hover{
-      transform:translateY(-5px);
+      transform:translateY(-8px);
+      box-shadow:0 12px 30px rgba(0,0,0,0.12);
     }
 
     .card h3,
     .article h3{
       color:#d63384;
       margin-bottom:15px;
+      font-size:1.4rem;
     }
 
-    .about{
-      text-align:center;
-      max-width:800px;
-      margin:auto;
-      color:#555;
-      font-size:1.1rem;
+    .card p,
+    .article p{
+      color:#666;
     }
+
+    .article a{
+      color:#d63384;
+      text-decoration:none;
+    }
+
+    .article a:hover{
+      text-decoration:underline;
+    }
+
+    /* ABOUT */
+
+    .about{
+      max-width:850px;
+      margin:auto;
+      text-align:center;
+      font-size:1.15rem;
+      color:#555;
+    }
+
+    /* CONTACT */
 
     .contact{
       text-align:center;
     }
 
-    footer{
-      text-align:center;
-      padding:20px;
-      background:#fff0f6;
-      color:#777;
+    .contact p{
+      font-size:1.1rem;
+      margin-bottom:15px;
     }
 
+    /* FOOTER */
+
+    footer{
+      background:#fff0f6;
+      text-align:center;
+      padding:25px;
+      color:#777;
+      font-size:0.95rem;
+    }
+
+    /* ANIMATION */
+
+    @keyframes fadeIn{
+
+      from{
+        opacity:0;
+        transform:translateY(30px);
+      }
+
+      to{
+        opacity:1;
+        transform:translateY(0);
+      }
+    }
+
+    /* MOBILE */
+
     @media(max-width:768px){
+
       h1{
-        font-size:2.5rem;
+        font-size:2.8rem;
       }
 
       .subtitle{
         font-size:1.1rem;
       }
+
+      .description{
+        font-size:1rem;
+      }
+
+      .nav-links{
+        display:none;
+      }
+
+      .section-title{
+        font-size:2rem;
+      }
     }
+
   </style>
+
 </head>
 
 <body>
 
+  <!-- NAVBAR -->
+
+  <nav>
+
+    <div class="nav-container">
+
+      <div class="logo">
+        Glow Skin Guide
+      </div>
+
+      <div class="nav-links">
+
+        <a href="#">Home</a>
+
+        <a href="#topics">Topics</a>
+
+        <a href="#articles">Articles</a>
+
+        <a href="#contact">Contact</a>
+
+      </div>
+
+    </div>
+
+  </nav>
+
   <!-- HERO SECTION -->
+
   <header>
+
     <div class="hero">
 
-      <h1>Glow Skin Guide</h1>
+      <h1>
+        Glow Skin Guide
+      </h1>
 
       <p class="subtitle">
         Discover the Best Skin Care Products for Healthy Glowing Skin
       </p>
 
       <p class="description">
-        Explore expert beauty tips, product reviews, acne solutions,
-        moisturizers, sunscreens, and beginner skin care routines.
+
+        Explore expert beauty tips, acne solutions,
+        moisturizers, sunscreens, Korean skincare,
+        and beginner-friendly skin care routines.
+
       </p>
 
-      <a href="#articles" class="btn">Explore Articles</a>
+      <a href="#articles" class="btn">
+        Explore Articles
+      </a>
 
     </div>
-  </header>
-  
-  <!-- PRODUCTS SECTION -->
-  <section>
 
-    <h2 class="section-title">Popular Skin Care Topics</h2>
+  </header>
+
+  <!-- TOPICS -->
+
+  <section id="topics">
+
+    <h2 class="section-title">
+      Popular Skin Care Topics
+    </h2>
 
     <div class="products">
 
       <div class="card">
-        <h3>Best Sunscreens</h3>
+
+        <h3>
+          Best Sunscreens
+        </h3>
 
         <p>
-          Discover the best sunscreens for oily skin, acne-prone skin,
-          and sensitive skin.
+          Discover lightweight sunscreens for oily skin,
+          acne-prone skin, and sensitive skin.
         </p>
+
       </div>
 
       <div class="card">
-        <h3>Korean Skin Care</h3>
+
+        <h3>
+          Korean Skin Care
+        </h3>
 
         <p>
-          Explore trending Korean beauty products and routines for glowing skin.
+          Explore trending Korean beauty products
+          and routines for glowing skin.
         </p>
+
       </div>
 
       <div class="card">
-        <h3>Acne Treatment</h3>
+
+        <h3>
+          Acne Treatment
+        </h3>
 
         <p>
-          Learn about acne solutions, cleansers, serums,
+          Learn about cleansers, serums,
           and products that help reduce breakouts.
         </p>
+
       </div>
 
       <div class="card">
-        <h3>Moisturizers</h3>
+
+        <h3>
+          Moisturizers
+        </h3>
 
         <p>
-          Find the best moisturizers for dry skin, oily skin,
-          and combination skin.
+          Find the best moisturizers for dry skin,
+          oily skin, and combination skin.
         </p>
+
       </div>
 
     </div>
 
   </section>
 
-  <!-- ABOUT SECTION -->
+  <!-- ABOUT -->
+
   <section>
 
-    <h2 class="section-title">About Glow Skin Guide</h2>
+    <h2 class="section-title">
+      About Glow Skin Guide
+    </h2>
 
     <div class="about">
 
       <p>
-        Glow Skin Guide helps beauty lovers discover the best skin care products,
-        routines, and beauty tips for healthier skin.
+
+        Glow Skin Guide helps beauty lovers discover
+        the best skin care products, routines,
+        and beauty tips for healthier glowing skin.
+
       </p>
 
       <br>
 
       <p>
-        We share honest reviews, beginner-friendly skin care advice,
+
+        We share honest reviews,
+        beginner-friendly skin care advice,
         and trending beauty recommendations.
+
       </p>
 
     </div>
 
   </section>
 
-  <!-- ARTICLES SECTION -->
+  <!-- ARTICLES -->
+
   <section id="articles">
 
-    <h2 class="section-title">Latest Articles</h2>
+    <h2 class="section-title">
+      Latest Articles
+    </h2>
 
     <div class="articles">
 
       <div class="article">
 
         <h3>
-  <a href="sunscreen.html" style="color:#d63384; text-decoration:none;">
-    Best Sunscreen for Oily Skin
-  </a>
+
+          <a href="sunscreen.html">
+            Best Sunscreen for Oily Skin
+          </a>
+
         </h3>
+
         <p>
-          Discover lightweight sunscreens that protect your skin
-          without making it greasy.
+
+          Discover lightweight sunscreens that protect
+          your skin without making it greasy.
+
         </p>
 
       </div>
@@ -281,34 +497,49 @@
       <div class="article">
 
         <h3>
-  <a href="skincare-routine.html"
-     style="color:#d63384; text-decoration:none;">
-     Beginner Skin Care Routine
-  </a>
-</h3>
 
-<p>
-  Learn the essential steps for building a simple and effective
-  skin care routine.
-</p>
-      </div>
+          <a href="skincare-routine.html">
+            Beginner Skin Care Routine
+          </a>
 
-      <div class="article">
-
-        <h3>Top Korean Moisturizers in 2026</h3>
+        </h3>
 
         <p>
-          Explore the most popular Korean moisturizers for glowing healthy skin.
+
+          Learn the essential steps
+          for building a simple and effective
+          skin care routine.
+
         </p>
 
       </div>
 
       <div class="article">
 
-        <h3>How to Remove Acne Marks Naturally</h3>
+        <h3>
+          Top Korean Moisturizers in 2026
+        </h3>
 
         <p>
-          Learn skin care tips and ingredients that help reduce acne scars.
+
+          Explore the most popular Korean moisturizers
+          for glowing healthy skin.
+
+        </p>
+
+      </div>
+
+      <div class="article">
+
+        <h3>
+          How to Remove Acne Marks Naturally
+        </h3>
+
+        <p>
+
+          Learn skin care tips and ingredients
+          that help reduce acne scars.
+
         </p>
 
       </div>
@@ -318,26 +549,38 @@
   </section>
 
   <!-- CONTACT -->
+
   <section id="contact">
 
-    <h2 class="section-title">Contact</h2>
+    <h2 class="section-title">
+      Contact
+    </h2>
 
     <div class="contact">
 
-      <p>Email: mirettemorgan91@gmail.com</p>
+      <p>
+        Email: mirettemorgan91@gmail.com
+      </p>
 
-      <br><br>
+      <a href="mailto:mirettemorgan91@gmail.com"
+         class="btn">
 
-      <a href="mailto:mirettemorgan91@gmail.com" class="btn">
         Send Email
+
       </a>
 
     </div>
 
   </section>
 
+  <!-- FOOTER -->
+
   <footer>
-    <p>© 2026 Glow Skin Guide</p>
+
+    <p>
+      © 2026 Glow Skin Guide | All Rights Reserved
+    </p>
+
   </footer>
 
 </body>
